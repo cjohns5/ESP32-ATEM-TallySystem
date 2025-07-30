@@ -62,8 +62,8 @@ GND       | LED common cathode (-)
 ## Setup Steps
 
 ### 1. Prepare Hardware
-1. Flash bridge ESP32 with `ESP32_ATEM_Bridge_BLE_v3.cpp`
-2. Flash both tally ESP32s with `ESP32_Tally_Light_BLE_v2.cpp`
+1. Flash bridge ESP32 with `ESP32_ATEM_Bridge_BLE_v3.ino`
+2. Flash both tally ESP32s with `ESP32_Tally_Light_BLE_v2.ino`
 3. Wire LEDs to tally lights according to diagram
 4. Set `DEVICE_ID` to 1 for first tally, 2 for second
 

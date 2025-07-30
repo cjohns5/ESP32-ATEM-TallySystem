@@ -124,7 +124,7 @@ cd ESP32-ATEM-Tally-System
 
 ### 2. Configure Bridge Device
 
-1. **Open Bridge Code**: `src/ESP32_ATEM_Bridge_BLE_v3.cpp`
+1. **Open Bridge Code**: `src/ESP32_ATEM_Bridge_BLE_v3.ino`
 2. **Configure Network Settings**:
    ```cpp
    #define ATEM_IP "192.168.1.100"     // Your ATEM switcher IP
@@ -138,7 +138,7 @@ cd ESP32-ATEM-Tally-System
 
 ### 3. Configure Tally Light Devices
 
-1. **Open Tally Code**: `src/ESP32_Tally_Light_BLE_v2.cpp`
+1. **Open Tally Code**: `src/ESP32_Tally_Light_BLE_v2.ino`
 2. **Set Camera ID** (unique for each device):
    ```cpp
    #define CAMERA_ID 1                 // Camera number (1-20)
@@ -155,13 +155,13 @@ cd ESP32-ATEM-Tally-System
 #### Bridge Device
 1. Connect bridge ESP32 to computer
 2. Select correct **Port** in **Tools** menu
-3. Open `ESP32_ATEM_Bridge_BLE_v3.cpp`
+3. Open `ESP32_ATEM_Bridge_BLE_v3.ino`
 4. Click **Upload** (Ctrl+U)
 5. Wait for "Done uploading" message
 
 #### Tally Light Devices
 1. Connect first tally ESP32 to computer
-2. Open `ESP32_Tally_Light_BLE_v2.cpp`
+2. Open `ESP32_Tally_Light_BLE_v2.ino`
 3. Set `CAMERA_ID 1` and `DEVICE_NAME "Tally_CAM_1"`
 4. Click **Upload**
 5. Repeat for additional tally lights with incremented camera IDs

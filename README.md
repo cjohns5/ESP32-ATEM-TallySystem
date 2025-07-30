@@ -80,8 +80,8 @@ GPIO 27 ──[220Ω]── Blue LED ──┘
    - Connect PC to same network as ATEM
 
 4. **Upload Code**:
-   - Upload `ESP32_ATEM_Bridge_BLE_v3.cpp` to bridge ESP32
-   - Upload `ESP32_Tally_Light_BLE_v2.cpp` to each tally ESP32
+   - Upload `ESP32_ATEM_Bridge_BLE_v3.ino` to bridge ESP32
+   - Upload `ESP32_Tally_Light_BLE_v2.ino` to each tally ESP32
    - Set unique `CAMERA_ID` for each tally light
 
 ### **3. Operation**
@@ -98,7 +98,7 @@ GPIO 27 ──[220Ω]── Blue LED ──┘
 
 ## 🎛️ Configuration
 
-### **Bridge Configuration** (`ESP32_ATEM_Bridge_BLE_v3.cpp`)
+### **Bridge Configuration** (`ESP32_ATEM_Bridge_BLE_v3.ino`)
 ```cpp
 #define ATEM_IP "192.168.1.100"        // ATEM switcher IP
 #define MAX_TALLY_DEVICES 4            // Max simultaneous connections
@@ -106,7 +106,7 @@ GPIO 27 ──[220Ω]── Blue LED ──┘
 #define TALLY_CHECK_INTERVAL 100       // Polling interval (ms)
 ```
 
-### **Tally Light Configuration** (`ESP32_Tally_Light_BLE_v2.cpp`)
+### **Tally Light Configuration** (`ESP32_Tally_Light_BLE_v2.ino`)
 ```cpp
 #define CAMERA_ID 1                    // Camera number (1-20)
 #define DEVICE_NAME "Tally_CAM_1"      // Unique device name
